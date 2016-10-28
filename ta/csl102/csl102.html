@@ -1,0 +1,80 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css"
+		href="mystyle.css" />
+	</head>
+
+	<body>
+
+		<h3><a href="http://www.cse.iitd.ac.in/cse/newcurriculum-contents/newcourses.html#CSL102" target="_blank">CSL102:</a> Introduction to Computer Science</h3>
+
+		<h4><a href="http://caml.inria.fr/" target="_blank">OCaml</a></h4>
+
+		Useful Links:<br />
+		<ul>
+			<li><a href="http://caml.inria.fr/pub/docs/manual-ocaml/index.html" target="_blank">OCaml Manual</a> </li>
+			<li><a href="http://caml.inria.fr/pub/docs/oreilly-book/">O'Reilley Book</a></li>
+			<li><a href="http://www.cs.jhu.edu/~scott/pl/lectures/caml-intro.html" target=_blank">An Introduction to OCaml</a></li>
+		</ul>
+
+		<br />
+
+		<a href="http://camelia.sourceforge.net/" target="_blank">Camelia</a>: An IDE for OCaml
+		<br/>
+		<p>
+		The camelia 1.1 package complains when trying to compile on the GCL computers. 
+		So <a href="camelia-1.1-mod.tar.gz">here</a>'s a slightly 
+		<abbr title="Added a quick-and-dirty abs() function to src/otextedit.cpp and added a declaration for class OCamlProcess; to src/console/console.h">modified</abbr> archive.
+		<br /><br />
+		Instructions:<br />
+		<ol>
+			<li>These instructions will not work on the CSC machines. To get camelia running on your CSC machine, click <a href="http://poorvi.cse.iitd.ac.in/~mcs112565/csl102.html">here</a> (Internal link. Will only open from the campus network.) <br /></li>
+			<br />
+			<li>In a terminal type the following:</li>
+		</ol>
+		<blockquote>
+			<code>
+				<br />cd $HOME
+				<br />wget http://www.cse.iitd.ac.in/~mcs112565/ta/csl102/camelia-1.1-mod.tar.gz
+				<br />mkdir opt
+				<br />tar zxvf camelia-1.1-mod.tar.gz
+				<br />cd camelia/src 
+				<br />./config --prefix=$HOME/opt
+				<br />make 
+				<br />make install
+				<br />export PATH=$HOME/opt/bin:$PATH 
+				<br />
+				camelia &amp;
+			</code>
+		</blockquote>
+
+		</p>
+		<p>
+		The last two commands need to be executed to start camelia subsequently. 
+		Or, you may add the <code>export</code> command to your <code>.profile</code> so
+		you can run Camelia by typing <code>camelia &amp;</code> in a terminal after you login. i.e., 
+		<br />
+		<blockquote>
+			<code>
+				echo 'export PATH=$HOME/opt/bin:$PATH' &gt;&gt; $HOME/.profile
+			</code>
+		</blockquote>
+		</p>
+		<br />
+		<p>
+		To compile the same on your own ubuntu laptop/desktop, the following dependencies must first be installed: (These definitely need to be installed, but I'm not sure if this list is exhaustive and any other dependencies are also required)
+		<br />
+		<code>
+			<blockquote>
+				<code>
+					sudo apt-get install ocaml qt4-qmake libqt3-compat-headers
+				</code>
+			</blockquote>
+		</code>
+		</p>
+		<br />
+		<br />
+	</body>
+
+</html>

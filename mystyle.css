@@ -1,0 +1,24 @@
+h1 {font-family: verdana}
+p 
+{
+font-family: verdana
+margin-left: 20px
+line-height: 170%
+}
+body
+{
+font-family: verdana
+line-height: 170%
+}
+ol#menuList
+{
+	list-style-type:katakana-iroha;
+}
+ul
+{
+	list-style-type:none;
+}
+a:link {text-decoration:none;}    /* unvisited link */
+a:visited {text-decoration:none;} /* visited link */
+a:hover {text-decoration:underline;}   /* mouse over link */
+a:active {text-decoration:underline;}  /* selected link */
